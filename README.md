@@ -1,27 +1,66 @@
 # ListaCarros
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.4.
+Projeto proposto como teste técnico.
+A aplicação consiste em uma lista de carros contendo marca, modelo, cor e valor. 
+Para que os dados sejam renderizados foi utilizada uma API criada a partir do JSON-server, a qual simula uma API rest.
+É possível que o usuario faça todas as requisições HTTP.
+-----------------------------------------------
+No projeto foi utilizado a estrutura SPA (Single page application), um conceito de gerar experiência para os usuários, atualizando partes do código em vez da página inteira.
 
-## Development server
+## `Tecnologias usadas:`
+| Ferramenta | Descrição |
+| --- | --- |
+| `Angular` | Framework |
+| `JSON-server` | Gerar API |
+| `HttpClientModule` | Biblioteca para consumir API|
+| `FormsModule` | Biblioteca para criação de formularios|
+| `CSS ` | Folha de estilo|
+| `npm ` | Gerenciador de pacotes|
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+---------
 
-## Code scaffolding
+## 📁 Arquitetura 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```
+ 📁 projeto
+   |
+   |-  📁 src
+   |    |
+   |    |- 📁 app
+   |         |- 📁 models
+   |              |- 📄 car.ts
+   |
+   |         |- 📁 services
+   |              |- 📄 car.service.spec.ts
+   |              |- 📄 car.service.ts   
+   |         |- 📄 app.componet.css
+   |         |- 📄 app.componet.html
+   |         |- 📄 app.componet.spec.ts        
+   |         |- 📄 app.componet.ts  
+   |         |- 📄 app.module.ts        
+   |
+   |    |- 📁 assets
+   |         |- 📁 data
+   |               |- 📄 db.json 
+   |               |- 📄 .gitkeep 
+   |
+   |    |- 📁 environments
+   |         |- 📄 environment.prod.ts
+   |         |- 📄 environment.ts
+   |                
+   |    |- 📄 main.ts
+   |    |- 📄 polyfills.ts
+   |    |- 📄 styles.css 
+   |    |- 📄 test.ts
+   |
+   |    |- 📄 package-lock.json
+   |    |- 📄 package.json
+   |    |- 📄 proxy.conf.json
+   |    |- 📄 README.md
+   |    |- 📄 tsconfig.app.json
+   |    |- 📄 tsconfig.json
+   |    |- 📄 tsconfig.spec.json
+   |      
+   |
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```
